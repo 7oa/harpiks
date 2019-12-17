@@ -1,0 +1,12 @@
+@import "core/vars";
+@import "core/mixins";
+@import "core/normalize";
+@import "core/fonts";
+
+@import "core/base";
+@import "core/buttons";
+
+@import "plugins/glide.core.min";
+@import "plugins/animate";
+
+@import "pages/index";
