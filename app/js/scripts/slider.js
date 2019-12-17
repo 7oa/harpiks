@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const conf = {
     type: "carousel",
     gap: 0,
-    animationDuration: 1000,
+    animationDuration: 700,
     animationTimingFunc: "ease-in-out"
   };
   sliders.forEach(item => {
