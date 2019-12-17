@@ -7,23 +7,14 @@ document.addEventListener("DOMContentLoaded", function() {
     .fromTo(
       mainImg,
       1.2,
-      { opacity: 0, x: "-100%" },
-      { opacity: 1, x: "0%", ease: Power2.easeInOut }
+      { opacity: 0, x: "-100%", ease: Power2.easeInOut },
+      { opacity: 1, x: 0 }
     )
-    .fromTo(
-      img,
-      1.2,
-      {
-        opacity: 0,
-        rotate: "-=36",
-        scale: 0.6
-      },
-      {
-        opacity: 1,
-        rotate: 0,
-        scale: 1
-      }
-    );
+    .from(img, 1.2, {
+      opacity: 0,
+      rotate: "-=36",
+      scale: 0.6
+    });
 
   //timeline Identity
   const tIdentity = new TimelineMax({ delay: 0.5 });
@@ -80,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let resourcesImgWidth = "width: 100%";
 
       if (window.matchMedia("(min-width: 1024px)").matches) {
-        resourcesImgWidth = 1035;
+        resourcesImgWidth = "calc(100vw - 400px)";
       }
       if (window.matchMedia("(min-width: 1440px)").matches) {
         resourcesImgWidth = 1035;

@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const conf = {
     type: "carousel",
     gap: 0,
+    dragThreshold: 10,
     animationDuration: 700,
+    perTouch: 1,
     animationTimingFunc: "ease-in-out"
   };
   sliders.forEach(item => {
-    let glide = new Glide(item, conf).mount();
-    item.onmouseenter = event => glide.go(">");
+    new Glide(item, conf).mount();
   });
 });

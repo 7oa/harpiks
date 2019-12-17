@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 
   @media screen and (min-width: $w-tablet) {
     height: 897px;
