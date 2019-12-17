@@ -26,10 +26,23 @@
     height: 897px;
     margin-bottom: 113px;
   }
+
   img {
     object-fit: cover;
     max-width: 250%;
     transform: translate(-5%, 5%);
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles */
+    opacity: 1;
+    background-image: url("images/Floating-A4-Paper-Mockup.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    img {
+      transform: none;
+      display: none;
+    }
   }
 }
 
@@ -554,10 +567,6 @@ h2.h2-title {
   padding-bottom: 38px;
   background-color: #62afc9;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin: 0 15px 20px;
   @media screen and (min-width: $w-desktop) {
     max-width: 1218px;
