@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
+  max-height: 100vh;
 
   @media screen and (min-width: $w-tablet) {
     height: 897px;
