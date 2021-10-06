@@ -6,7 +6,7 @@
   "dependencies": {
     "jquery-ajax-transport-xdomainrequest": "^1.0.4",
     "suggestions-jquery": "^18.8.0",
-    "url-parse": "^1.4.3"
+    "url-parse": "^1.5.2"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
